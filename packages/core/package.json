@@ -1,0 +1,19 @@
+{
+  "name": "@budget/core",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "test": "jest"
+  },
+  "dependencies": {
+    "zustand": "^4.5.2",
+    "zustand-persist": "^0.4.0",
+    "@budget/database": "workspace:*",
+    "zod": "^3.22.4"
+  }
+} 
