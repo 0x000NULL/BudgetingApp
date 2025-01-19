@@ -13,7 +13,7 @@
   "dependencies": {
     "zustand": "^4.5.2",
     "zustand-persist": "^0.4.0",
-    "@budget/database": "workspace:*",
-    "zod": "^3.22.4"
+    "@budget/database": "file:../database",
+    "zod": "^3.24.1"
   }
 } 

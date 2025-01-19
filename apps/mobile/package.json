@@ -13,8 +13,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@budget/ui": "workspace:*",
-    "@budget/core": "workspace:*",
+    "@budget/ui": "file:../../packages/ui",
+    "@budget/core": "file:../../packages/core",
     "expo": "^50.0.7",
     "react-native": "^0.73.4",
     "react-native-web": "^0.19.10"

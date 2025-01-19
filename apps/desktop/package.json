@@ -4,15 +4,22 @@
   "private": true,
   "main": "dist/main.js",
   "scripts": {
-    "dev": "electron-vite dev",
-    "build": "electron-vite build",
-    "package": "electron-builder",
+    "start": "electron .",
+    "dev": "tsc && electron .",
+    "build": "tsc && electron-builder",
+    "electron:rebuild": "electron-rebuild",
     "lint": "eslint \"src/**/*.ts*\"",
     "test": "jest"
   },
   "dependencies": {
-    "@budget/ui": "workspace:*",
-    "@budget/core": "workspace:*",
-    "electron-store": "^8.1.0"
+    "@budget/ui": "file:../../packages/ui",
+    "@budget/core": "file:../../packages/core",
+    "electron-store": "^8.1.0",
+    "electron-updater": "^6.1.7"
+  },
+  "devDependencies": {
+    "electron": "^29.1.1",
+    "electron-builder": "^24.12.0",
+    "electron-rebuild": "^3.2.9"
   }
 } 

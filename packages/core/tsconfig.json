@@ -1,13 +1,11 @@
 {
-  "extends": "../config/typescript-preset.json",
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"],
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ES6",
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "references": [
+    { "path": "../database" }
+  ]
 } 

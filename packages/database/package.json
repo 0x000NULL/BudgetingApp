@@ -7,13 +7,13 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "eslint \"src/**/*.ts\"",
-    "test": "jest",
-    "db:generate": "prisma generate",
-    "db:push": "prisma db push"
+    "lint": "eslint \"src/**/*.ts*\"",
+    "test": "jest"
   },
   "dependencies": {
     "@prisma/client": "^5.10.2",
+    "better-sqlite3": "^9.4.3",
+    "pg": "^8.11.3",
     "prisma": "^5.10.2"
   }
 } 
